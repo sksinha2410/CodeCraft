@@ -1,0 +1,64 @@
+.vid{
+    grid-gap: 20px;
+
+    .vid_wrapper{
+        display: block;
+        height: 80%;
+        transition: all .4s ease-in-out;
+    }
+
+    .playlist__wrapper{
+        position: relative;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+
+    .playlist__wrapper{
+        transition: .3s ease-in-out;
+    }
+
+    .playlist__thumb{
+        height: 100%;
+    }
+
+    .play__icon{
+        width: 50%;
+        background: $dark-grey;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom:0;
+        margin: 1.5rem .8rem;
+        opacity: .8;
+    }
+
+    .vid__content {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        background: url("#{$base}src/img/video\ background\ white\ plate\ with\ brush\ stroke-02.svg") no-repeat center center / cover;
+    }
+
+    .playlist__content{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        background: url("#{$base}src/img/video\ background\ white\ plate\ with\ brush\ stroke-02.svg") no-repeat center center / cover;
+    }
+
+    .vid__content{
+        padding-right: 1.5rem;
+    }
+
+    .vid__content--main{
+        padding: 2rem;
+        padding-right: 3.5rem;
+        background: url("#{$base}src/img/video\ background\ white\ plate\ with\ brush\ stroke-02.svg") no-repeat center center / cover;
+    }
+}
+
+.vid_wrapper:hover, .playlist__wrapper:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,131 @@
+.search{
+    width: 50%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: .5rem;
+    position: relative;
+
+
+    .filter__active{
+        height: 30rem;
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    &__filter{
+        height: 100%;
+        width: 100%;
+        background-color: $light;
+        border-radius: 2.5rem;
+        color: $dark-grey;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        gap: .8rem;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
+
+    &__box{
+        position: relative;
+        margin:0 auto;
+        width:100%;
+        height: 5.38rem;
+        @include flex;
+    }
+
+    &__input{
+        border:none;
+        position: relative;
+        padding: 1.5rem 2rem;
+        border-radius: 2.5rem;
+        width: 100%;
+        margin-right: .5rem;
+        box-shadow: $shadow;
+
+        &:focus, &:active{
+            outline: 0;
+            border:0;
+        }
+    }
+
+    &__placeholder{
+        position: absolute;
+        font-size: 2.5rem;
+        color: $light-grey;
+        top: 0;
+        left: 0;
+        margin: .7rem 2rem; 
+        cursor: initial;
+        //transition: all .3s ease-in-out;
+    }
+
+    &__submit{
+        width: 5.8rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        //padding: 3rem;
+        border-radius: 50%;
+        background: $secondary;
+        color: $light;
+        display: block;
+        cursor:pointer;
+        transition: all .2s;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom: 0;
+        @include flex;
+
+        &:hover{
+            background-color: $primary;
+        }
+
+        &:focus, &:active{
+            border:none;
+            outline: 0;
+        }
+    }
+}
+
+.filter{
+    &__content{
+        position: absolute;
+        width: 95%;
+        height: 0rem;
+        top: 100%;
+        left: 1.5rem;
+        border-radius: .5rem;
+        transform: translateY(.5rem);
+        background-color: $light;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ease-in-out;
+        padding: 2rem;
+        align-items: flex-start;
+        box-shadow: $shadow;
+    }
+
+    &__title{
+        color: $dark;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__list{
+        color: $dark-grey;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    &__link{
+        color: $dark-grey;
+
+        &:hover{
+            color: $dark;
+            font-weight: bold;
+        }
+    }
+}

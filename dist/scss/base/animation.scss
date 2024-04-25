@@ -1,0 +1,12 @@
+@keyframes bodybg{
+    0%, 100%{
+        background: url('#{$base}src/img/BG\ \(1\).jpg') no-repeat center center / cover fixed;
+    }
+
+    50%{
+        background: url('#{$base}src/img/BG\ \(2\).jpg') no-repeat center center / cover fixed;
+    }
+
+    100%{
+        background: url('#{$base}src/img/BG\ \(3\).jpg') no-repeat center center / cover fixed;    }
+}

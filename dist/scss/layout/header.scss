@@ -1,0 +1,18 @@
+.header{
+    height: auto;
+    margin-bottom: 10rem;
+
+    .hero{
+        max-width:120rem;
+        margin:0 auto;
+    }
+    .hero__main{
+        @include grid; 
+        align-items: initial;    
+    }
+
+    .hero__content{
+        color: $dark;
+        align-self: flex-start;
+    }
+}

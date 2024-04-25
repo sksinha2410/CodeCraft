@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; //define 1 rem as 10px
+}
+
+body{
+     animation: bodybg 30s ease-in-out infinite;
+     transition: all 8s ease-in-out;
+}
+
+.wrapper{
+    height: auto;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem 8rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+.footer{
+    font-size: 1.8rem;
+    color: $light;
+    height: auto;
+    background-color: $primary;
+    opacity: .9;
+    
+    .mail{
+        a{
+            color: $light;
+        }
+    }
+    &__content{
+        max-width: 120rem;
+        margin:0 auto;
+    }
+}

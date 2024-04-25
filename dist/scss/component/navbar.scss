@@ -1,0 +1,104 @@
+.nav{
+    height: 12rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: static;
+    transition: all .6s ease-in-out;
+    
+    @include flex;
+
+    &__logo{
+        height: auto;
+        width: 30vw;
+    }
+
+    &__navbar{
+        @include flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    &__list{
+        padding: 2rem .8rem;
+        //background-color: $primary;
+        position: relative;
+
+        &:hover .subnav{
+            opacity: 1;
+            transform: translateY(10px);
+            visibility: visible;
+        }
+    }
+
+    &__link{
+        color: $light;
+        background: $primary;
+        padding: 1rem 2rem;
+        text-transform: capitalize;
+        width: 30%;
+        border-radius: 2rem 0rem 2rem 0rem;
+
+        &:hover{
+            background: $secondary;
+        }
+    }
+
+
+    &__fixed{
+        position: sticky;
+        //height: auto;
+        width: 100%;
+        top: 0;
+        left:0;
+        right: 0;
+        margin:0;
+        background: rgba(255, 66, 148, 0.9);
+        box-shadow: $shadow;   
+    }
+}
+
+.subnav{
+    width:150%;
+    margin: .1rem .5rem;
+    position: absolute;
+    background: $secondary;
+    border-radius: .5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    box-shadow: $shadow;
+    transition: all .4s ease-in-out;
+
+    &__list{
+        padding: 1rem 1rem 1rem 1.5rem;
+
+        &:hover{
+            background: $primary;
+            border-radius: .5rem;
+            cursor:pointer;
+        }
+
+        &:not(:last-child){
+            border-bottom: 1px solid $light;
+        }
+
+        &:first-child:hover ~ .arrow{
+            background: $primary;
+        }
+    }
+
+    &__link{
+        color: $light;
+        font-size: 1.8rem;
+    }
+    .arrow{
+        height:2rem;
+        width: 2rem;
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translate(50%, -50%) rotate(45deg);
+        background: #ff4294;
+    }
+}

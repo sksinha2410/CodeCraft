@@ -1,0 +1,57 @@
+
+.seemore{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    background: #fff;
+    color: $dark;
+    border-radius: 50%;
+    right: 0;
+    bottom: 25%;
+    transform: translateX(125%);
+    box-shadow: $shadow;
+    cursor: pointer;
+}
+
+.login{
+    color: $light;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background: $login-primary;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    width:30%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:focus, &:active{
+        outline: 0;
+        border:0;
+        background: $login-secondary;
+    }
+
+    &__text{
+        width: 21%;
+    }
+
+    &__explore{
+        width: 81%;
+        visibility: hidden;
+    }
+
+    &:hover{
+        width: 100%;
+    }
+    &:hover &__explore{
+        visibility: visible;
+        transition: all 4s ease-in-out;
+    }
+}
+
+
+

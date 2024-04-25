@@ -1,0 +1,43 @@
+@media only screen and (max-width: 420px) {
+    
+    .nav{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .wrapper{
+        padding: 0 5%;
+    }
+
+    .hero{
+        padding: 0 5%;
+    }
+
+    .hero__heading{
+        font-size: 5rem;
+        line-height: 1;
+    }
+
+    .hero__main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upload__content, .hero__main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer{
+        font-size: 1.5rem;
+    }
+
+    .footer__bottom{
+        grid-template-columns: repeat(1, 1fr);
+
+        .social{
+            font-size: 3.5rem;
+        }
+    }
+  }
